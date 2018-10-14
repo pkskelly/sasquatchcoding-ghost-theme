@@ -70,7 +70,7 @@
                 <a class="article-open_shere-linkedin" href="http://www.linkedin.com/shareArticle?mini=true&url={{url absolute="true"}}" onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;"><i class="fa fa-linkedin"></i> Update</a>
                 <a class="article-open_shere-email" href="mailto:?subject=Pete%20Skelly%3A%20{{encode title}}&amp;body={{url absolute="true"}}"><i class="fa fa-envelope"></i> Email</a>
             </section>
-            {{#author}}
+            {{#primary_author}}
             <section class="article-open_author">
                 {{#if feature_img}}
                 <figure class="article-open_author_image">
@@ -82,7 +82,7 @@
                     {{#if bio}}<p>{{bio}} <a href="/about" class="article_link-more fa fa-long-arrow-right"></a></p>{{/if}}
                 </div>
             </section>
-            {{/author}}
+            {{/primary_author}}
                 {{#if tags}}
             <section class="article-open_tag">
                 <h6>Tags:</h6>
