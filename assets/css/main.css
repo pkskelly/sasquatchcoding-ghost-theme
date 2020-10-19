@@ -1714,12 +1714,12 @@ th, td
     text-transform: none;
   }
 
-.article-open_shere a, .pagination_next, .pagination_prev, .tag
+.article-open_share a, .pagination_next, .pagination_prev, .tag
 {
   font-family: Tahoma, Geneva, sans-serif;
 }
 
-.article-open_shere .fa
+.article-open_share .fa
 {
   font-size: 16px;
 }
@@ -1773,12 +1773,12 @@ th, td
   margin: 0 auto;
 }
 
-.article-open_author, .article-open_shere
+.article-open_author, .article-open_share
 {
   border-bottom: 2px solid #eeedea;
 }
 
-.article-open_shere
+.article-open_share
 {
   text-align: center;
   padding: 10px 0;
@@ -1795,7 +1795,7 @@ th, td
   padding-bottom: 1.92308rem;
 }
 
-.article-open_shere a
+.article-open_share a
 {
   margin: 1.2rem 10px;
   display: inline-block;
@@ -1815,7 +1815,7 @@ th, td
     font-size: .923em;
   }
 
-  .article-open_shere a
+  .article-open_share a
   {
     margin: 10px;
   }
@@ -1823,7 +1823,7 @@ th, td
 
 @media (min-width:0)and (max-width:40em)
 {
-  .article-open_shere a
+  .article-open_share a
   {
     padding: 9px 16px;
     margin: 5px;
@@ -1831,32 +1831,32 @@ th, td
   }
 }
 
-.article-open_shere-facebook
+.article-open_share-facebook
 {
   background-color: #3b5998;
 }
 
-.article-open_shere-google
+.article-open_share-google
 {
   background-color: #d94734;
 }
 
-.article-open_shere-email
+.article-open_share-email
 {
   background-color: #97908F;
 }
 
-.article-open_shere-linkedin
+.article-open_share-linkedin
 {
   background-color: #4875B4;
 }
 
-.article-open_shere-twitter
+.article-open_share-twitter
 {
   background-color: #55acee;
 }
 
-.article-open_shere-feed
+.article-open_share-feed
 {
   background-color: #dd7346;
 }
