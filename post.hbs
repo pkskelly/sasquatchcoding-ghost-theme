@@ -34,14 +34,11 @@
                     <li class="socialIcons_link">
                         <a class="fa fa-facebook" href="https://www.facebook.com/sharer/sharer.php?u={{url absolute="true"}}" onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;"></a>
                     </li>
-                    <li class="socialIcons_link">
-                        <a class="fa fa-google-plus" href="https://plus.google.com/share?url={{url absolute="true"}}" onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;"></a>
-                    </li>
                     <li class="socialIcons_link linkedin">
-                        <a class="fa fa-linkedin" href="http://www.linkedin.com/shareArticle?mini=true&url={{url absolute="true"}}" onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;"></a>
+                        <a class="fa fa-linkedin" href="http://www.linkedin.com/shareArticle?mini=true&url={{url absolute="true"}}" onclick="window.open(this.href, 'linkedin-share','width=580,height=296');return false;"></a>
                     </li>
                     <li class="socialIcons_link reddit">
-                        <a class="fa fa-reddit-alien" href="http://reddit.com/submit?url={{url absolute="true"}}&title=Pete%20Skelly%3A%20{{encode title}}" onclick="window.open(this.href, 'facebook-share','width=580,height=550');return false;"></a>
+                        <a class="fa fa-reddit-alien" href="http://reddit.com/submit?url={{url absolute="true"}}&title=Pete%20Skelly%3A%20{{encode title}}" onclick="window.open(this.href, 'reddit-share','width=580,height=550');return false;"></a>
                     </li>
                     <li class="socialIcons_link">
                         <a class="fa fa-envelope" href="mailto:?subject=Pete%20Skelly%3A%20{{encode title}}&amp;body={{url absolute="true"}}"></a>
@@ -63,14 +60,13 @@
             -->
         </section>
         <footer class="post">
-            <section class="article-open_shere">
-                <a class="article-open_shere-twitter" href="https://twitter.com/share?text=Pete%20Skelly%3A%20{{encode title}}&amp;url={{url absolute="true"}}" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;"><i class="fa fa-twitter"></i> Tweet</a>
-                <a class="article-open_shere-facebook" href="https://www.facebook.com/sharer/sharer.php?u={{url absolute="true"}}" onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;"><i class="fa fa-facebook"></i> Post</a>
-                <a class="article-open_shere-google" href="https://plus.google.com/share?url={{url absolute="true"}}" onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;"><i class="fa fa-google-plus"></i> Share</a>
-                <a class="article-open_shere-linkedin" href="http://www.linkedin.com/shareArticle?mini=true&url={{url absolute="true"}}" onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;"><i class="fa fa-linkedin"></i> Update</a>
-                <a class="article-open_shere-email" href="mailto:?subject=Pete%20Skelly%3A%20{{encode title}}&amp;body={{url absolute="true"}}"><i class="fa fa-envelope"></i> Email</a>
+            <section class="article-open_share">
+                <a class="article-open_share-twitter" href="https://twitter.com/share?text=Pete%20Skelly%3A%20{{encode title}}&amp;url={{url absolute="true"}}" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;"><i class="fa fa-twitter"></i> Tweet</a>
+                <a class="article-open_share-facebook" href="https://www.facebook.com/sharer/sharer.php?u={{url absolute="true"}}" onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;"><i class="fa fa-facebook"></i> Post</a>
+                <a class="article-open_share-linkedin" href="http://www.linkedin.com/shareArticle?mini=true&url={{url absolute="true"}}" onclick="window.open(this.href, 'linkedin-share','width=580,height=296');return false;"><i class="fa fa-linkedin"></i> Update</a>
+                <a class="article-open_share-email" href="mailto:?subject=Pete%20Skelly%3A%20{{encode title}}&amp;body={{url absolute="true"}}"><i class="fa fa-envelope"></i> Email</a>
             </section>
-            {{#author}}
+            {{#primary_author}}
             <section class="article-open_author">
                 {{#if feature_img}}
                 <figure class="article-open_author_image">
@@ -82,7 +78,7 @@
                     {{#if bio}}<p>{{bio}} <a href="/about" class="article_link-more fa fa-long-arrow-right"></a></p>{{/if}}
                 </div>
             </section>
-            {{/author}}
+            {{/primary_author}}
                 {{#if tags}}
             <section class="article-open_tag">
                 <h6>Tags:</h6>
