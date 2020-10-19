@@ -1,10 +1,18 @@
 {
   "name": "sasquatchcoding",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "author": {
     "name": "Pete Skelly",
     "email": "peteskelly@gmail.com",
     "url": "https://github.com/pkskelly/sasquatchcoding-ghost-theme"
+  },
+  "keywords": [
+      "ghost",
+      "ghost-theme",
+      "blog"
+  ],
+  "engines": {
+    "ghost-api": "v3"
   },
   "devDependencies": {
     "gulp": "^3.9.1",
