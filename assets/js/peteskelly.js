@@ -4,7 +4,7 @@
 function loadCommunityEvents() {
     $.ajax({
     type: "GET",
-    url: "https://prod-pasblogfunctions.azurewebsites.net/api/getEvents?code=AkXBY/m6LAJ0P75QdWPxND1VNI9ePFqNwxcX4N3nQNWMIUuadYSE/g==",
+    url: "https://prod-blog-functions-funcapp.azurewebsites.net/api/events?top=5&code=bMlAnMVjlvWg4qXPv38TlLKi7d1xXUaltwfj8tiVgvyQq0aXp7Hbwg==",
     dataType: "json",
     }).success( function( data ) {
         console.log(data);
@@ -17,7 +17,7 @@ function loadCommunityEvents() {
 function loadPodcasts() {
     $.ajax({
     type: "GET",
-    url: "https://prod-pasblogfunctions.azurewebsites.net/api/getPodcasts?code=MXc69hp9xie5QjP9LBd2/HADQiIYYj76KS8VMMHxrsxNgIcWqIZqcA==",
+    url: "https://prod-blog-functions-funcapp.azurewebsites.net/api/podcasts?top=10&code=NCA/oPHQ724dQWL8xRQxUijwUfbwJoktdkSEmK2vPTlQUQ7OX1giTQ==",
     dataType: "json",
     }).success( function( data ) {
         console.log(data);
@@ -34,7 +34,7 @@ function insertCommunityEvent(eventData) {
             var i = 0;
             var maxEvents = eventData.length <= 5 ? eventData.length : 5;     
             do {
-                eventInfo += "<li><a href='" + eventData[i].link + "'>" + eventData[i].name + "</a></li>";
+                eventInfo += "<li><a title='"  + eventData[i].altText +  "' href='" + eventData[i].link + "' target='_blank'>" + eventData[i].displayName + "</a></li>";
                 i++;
             }
             while (i < maxEvents);
@@ -52,7 +52,7 @@ function insertPodcasts(podcastData) {
          var i = 0;
          var podcastMax = podcastData.length <= 10 ? podcastData.length : 10;     
          do {
-             podcasts += "<li><a href='" + podcastData[i].Url + "'>" + podcastData[i].Name + "</a></li>";
+             podcasts += "<li><a href='" + podcastData[i].url + "' target='_blank'>" + podcastData[i].name + "</a></li>";
              i++;
          }
          while (i < podcastMax);
